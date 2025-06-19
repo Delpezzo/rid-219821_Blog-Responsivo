@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Blog Responsivo</title>
+</head>
+<body>
+    <main>
+        <!--Header-->
+            <header class="container header">
+                <div>
+                    <h1>The Dev News</h1>
+                </div>
+            </header>
+
+        <!-- COLUNA ESQUERDA -->
+       <section class="container colunas">
+       <div class="coluna-esquerda">
+
+       <!-- Seção imagem -->
+    <section class="image-section">
+     <picture>
+        <source srcset="./imagens/cidade2.svg" media="(max-width: 768px)">
+        <img id="cidade" src="./imagens/cidade.svg" alt="Cidade">
+      </picture>
+    </section>
+
+    <!-- Seção Posts Mais recentes -->
+    <section class="po">
+      <div class="teste2">
+      <h1>Posts mais recentes</h1>
+      <a href="">Ver todos</a>
+      </div>
+    </section>
+
+    <!-- Imagens recentes -->
+    <section class="recen-imagens">
+      <div ><img src="./imagens/recentes1.svg" alt=""></div>
+      <div><img src="./imagens/recentes2.svg" alt=""></div>
+      <div><img src="./imagens/recentes3.svg" alt=""></div>
+      <div><img src="./imagens/recentes4.svg" alt=""></div>
+    </section>
+  </div>
+
+  <!-- COLUNA DIREITA -->
+  <div class="coluna-direita">
+
+    <!-- Posts Populares -->
+    <aside class="populares coluna-direita">
+      <div class="teste3">
+      <h1>Posts Populares</h1>
+      </div>
+      <ul>
+        <li class="posts-populares"><img src="./imagens/post1.svg" alt=""></li>
+        <li class="posts-populares"><img src="./imagens/post2.svg" alt=""></li>
+        <li class="posts-populares"><img src="./imagens/post3.svg" alt=""></li>
+      </ul>
+    </aside>
+
+    <!-- Categorias -->
+    <aside class="categorias coluna-direita">
+      <div class="teste3">
+      <h1>Categorias</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><span>saúde</span> <span>(1)</span></li>
+          <li><span>desenvolvimento</span> <span>(2)</span></li>
+          <li><span>produtividade</span> <span>(2)</span></li>
+          <li><span>opinião</span> <span>(1)</span></li>
+        </ul>
+      </nav>
+    </aside>
+
+  </div>
+</section>
+
+        <!--FOOTER-->
+        <footer class="container footer">
+            <div>
+            <h1>Copyright@The Dev News</h1>
+            </div>
+        </footer>
+
+    </main>
+    
+</body>
+</html>
