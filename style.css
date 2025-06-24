@@ -1,370 +1,466 @@
 /*Geral da Pagina*/
-html{
-    font-family: Montserrat;
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
+html, body, main {
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat;
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
 }
 
-body{
-    margin: 0;
-}
-
-.container{
-    padding-left: 9rem;
-    padding-right: 9rem;
-}
-
-.colunas {
+.container {
+  max-width: 90rem;
+  margin: 0 auto;
   display: flex;
+  gap: 2rem;
+  padding-top: 3.75rem;
+  padding-right: 9.75rem;
+  padding-bottom: 1rem;
+  padding-left: 9,75rem;
 }
+
+
 
 .coluna-esquerda {
-  width: 65%;
+  flex: 0 0 46.5rem; 
 }
 
 .coluna-direita {
-  width: 35%;
+  flex: 0 0 22.5625rem; 
 }
 
-.image-section {
-  margin-top: 2rem;
-}
-
-h1{
-    font-family: Montserrat;
-    font-weight: 700;
-    font-size: 1.2rem;
-    color: #FFFFFF;
-}
 
 /*Header*/
 .header{
-    background-color: #02A28F;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+  width: 100%;
+  height: 4.375rem;
+  gap: .625rem;
+  padding-top: 1rem;
+  padding-right: 9.75rem;
+  padding-bottom: 1rem;
+  padding-left: 9.75rem;
+  background-color: #02A28F;
+  box-shadow: 0px .625rem 1.25rem 0px #0000001A;
 }
 
 .header h1{
-    font-family: Montserrat;
-    font-weight: 700;
-    font-size: 2.25rem;
-    line-height: 100%;
-    letter-spacing: 0%;
-    margin-left: 1.56rem;
-
+  font-weight: 700;
+  font-size: 2.25rem;
+  color: white;
 }
 
+/*Banner*/
+.banner{
+  background: linear-gradient(180deg, rgba(102, 102, 102, 0) 0%, #000000 100%),
+  url(./imagens/Cidade.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 46.5rem;
+  height: 24.75rem;
+  border-radius: .625rem;
+  box-shadow: 0px 0.625 1.25rem 0px #0000001A;
+}
 
-/*Section Image*/
+.banner-title{
+  padding-top: 17.5rem;
+  margin-left: 1.875rem;
+}
 
+.banner-title h2{
+  font-weight: 700;
+  font-size: 2rem;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
 
-#cidade{
-    width: 100%;
-    max-width: 100%;
-    padding: 0;
-    margin-top: 1.25rem;
+.banner-title h3{
+  font-weight: 400;
+  font-size: 1rem;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
 
+.banner-title h5{
+  color: white;
+  font-weight: 500;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
 }
 
 /*Seção Posts Mais recente*/
+.po{
+  width: 46.5rem;
+  height: 3.5;
+  margin-top: 2rem;
+}
+
 .teste2{
-    background-color: #02A28F;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 95%; 
-    margin-left: 1.31rem;
-    box-sizing: border-box; 
-    border-radius: 0.5rem;  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #02A28F;
+  border-radius: .5rem;
+  padding-top: 1rem;
+  padding-right: 1.5rem;
+  padding-bottom: 1rem;
+  padding-left: 1.5;
+  box-shadow: 0px 0.625 0.625 0px #0000001A;
 }
 
 .teste2 h1{
   font-weight: 700;
   font-size: 1.25rem;
-  padding-left: 2.18rem;
-  padding-right: 12.5rem;
-    
-}
-
-.teste2 a{
-    font-weight: 500;
-    font-size: 0.87rem;
-    text-decoration: underline;
-    text-decoration-style: solid;
-    color: white;
-    margin-right: 1.25rem;
-}
-
-
-.recen-imagens {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 0;
-  margin-top: 1rem;  
-  padding: 0;
-  width: 100%;
-}
-
-.recen-imagens div {
-  width: 100%;
+  color: white;
   padding: 0;
   margin: 0;
 }
 
-.recen-imagens img {
-  width: 100%;
-  display: block;
-  object-fit: cover;
+.teste2 a{
+  font-weight: 500;
+  font-size: .87rem;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  color: white;
+  margin-right: 1.25rem;
+}
 
+/*Imagens Recentes*/
+.recen-imagens {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 1rem;  
+  width: 46.5rem;
+  height: 51rem;
+  padding: 0;
+  margin: 0;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+}
+
+.recen-imagens h3{
+  font-weight: 400;
+  font-size: .875rem;
+  color: #02A28F;
+  margin-left: 1rem;
+  margin-bottom: 0;
+}
+
+.recen-imagens h2{
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #000000;
+  margin-left: 1rem;
+  margin-top: .5rem;
+  margin-bottom: 0;
+}
+
+.recen-imagens h4{
+  font-weight: 700;
+  font-size: .875rem;
+  color: #616161;
+  margin-left: 1rem;
+  margin-top: .5rem;
+  margin-bottom: 0;
+}
+
+.recen-imagens h5{
+  font-weight: 500;
+  font-size: .875rem;
+  color: #616161;
+  margin-left: 1rem;
+  margin-top: .5rem;
+  margin-bottom: 1rem;
+}
+
+.recen-imagens p{
+  font-weight: 400;
+  font-size: .875rem;
+  color: #000000;
+  margin-left: 1rem;
+  margin-top: .5rem;
+  margin-bottom: 0;
+}
+
+.recen-imagens img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.cards{
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  box-shadow: 0px .625rem 1.25rem 0px #0000001A;
 }
 
 /*Coluna Direita*/
 
 .populares{
-    max-width: 100%;
-    width: 100%;
-
+  width: 22.5625rem;
+  height: 24.75rem;
+  top: 7.5rem;
+  left: 57.75rem;
 }
 
 .populares h1{
-    background-color: #02A28F;
-    padding: 1rem;
-    border-radius: 0.6rem;
-    margin-left: .6rem;
-    margin-top: 3.75rem;
-    margin-bottom: 2rem;
-    width: 78%;
+  margin: 0;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: white;
+  padding-top: .8125rem;
+  padding-left: .9375rem;
 }
 
 .populares ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
 }
 
-.teste3 h1{
-  margin-bottom: .5rem;
-  padding-left: 1.3rem;
-
+.teste3{
+  width: 22.5rem;
+  height: 3rem;
+  background-color: #02A28F;
+  border-radius: .625rem;
+  box-shadow: 0px .625rem .625rem 0px #0000001A;
 }
 
-.populares ul li img {
-  width: 91%;     
-  display: block;    
+.posts-populares{
+  display: flex;
+  flex-direction: column;
+  width: 22.5rem;
+  height: 6rem;
+  border-radius: .625rem;
+}
+
+.posts-img {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* espaço entre imagem e texto */
+  box-shadow: 0px .625rem .625rem 0px #0000001A;
+  border-radius: .625rem;
+  height: 6rem; /* altura fixa conforme seu design */
+  padding: 0 .625rem; /* espaço interno horizontal */
+  background-color: #fff;
+}
+
+.posts-img img {
+  width: 8.25rem;
+  height: 4.375rem;
+  border-radius: .625rem;
+  object-fit: cover;
+}
+
+.posts-img > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%; /* força a div a preencher o .posts-img */
+}
+
+.posts-img:not(:last-child) {
+  margin-bottom: 1.375rem;
+}
+
+.posts-img h2 {
+  font-weight: 700;
+  font-size: .875rem;
+  color: #000000;
+  margin: 0;
+}
+
+.posts-img h5 {
+  color: #616161;
+  font-weight: 500;
+  font-size: .875rem;
+}
+
+.negrito{
+  font-weight: bold;
+  font-size: .875rem;
 }
 
 .categorias{
-    max-width: 100%;
-    width: 100%;
-
+  width: 22.5625rem;
+  height: 11.5rem;
+  margin-top: 2rem;
+  gap: .875rem;
 }
 
 .categorias h1{
-    margin-top: 1.5rem;
-    background-color: #02A28F;
-    padding: 1rem;
-    margin-left: .6rem;
-    border-radius: 0.6rem;
-    padding-left: 1.3rem;
-    margin-top: 0.75rem;
-    width: 78%;
+  margin: 0;
+  padding: 0;
+  padding-top: .75rem;
+  padding-left: .9375rem;
+  color: white;
 }
 
 .categorias ul {
-  list-style: none;
   color: #616161;
   font-weight: 600;
-  padding: 0;
+  width: 22.5625rem;
+  padding-left: 0;
+}
+
+.categorias li:not(:last-child){
+  padding-bottom: 1.25rem;
 }
 
 .categorias li {
   display: flex;
   justify-content: space-between;
-  padding: 0.83rem 0.75rem;
   align-items: center;
-  margin-right: 3.12rem;
 }
 
 .categorias li span:first-child::before {
   content: "> ";
   color: #616161;
-  margin-right: 0.25rem;
+  margin-right: .25rem;
 }
 
 
 /*Footer*/
 
 .footer{
+  width: 100%;
+  height: 3rem;
   background-color: #02A28F;
-  padding-top: 1.06rem;
-  padding-bottom: 1.06rem;
-
+  padding-top: .625rem;
+  padding-bottom: .625rem;
+  margin: 0;
+  padding: 0;
 }
 
 .footer h1{
   font-weight: 600;
-  font-size: 0.87rem;
+  font-size: .875rem;
+  color: white;
   text-align: center;
+  margin: 0;
+  padding-top: .9375rem;
 }
 
 @media (max-width: 768px) {
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch; 
-    width: 100%;
-    max-width: 100%;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  width: 23rem;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+
 }
 
-.colunas {
-  flex-direction: column !important;
-  align-items: stretch;
-}
-
-.colunas > div {
-  width: 100%;
-}
-
-header div {
-  padding: 1rem 0;
+.coluna-esquerda{
+  width: 23rem;
   margin: 0;
 }
 
-header h1{
+.coluna-direita{
+  width: 23rem;
+  margin:0;
+}
+
+
+.header{
+  width: 24rem;
+  height: 4.375rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding: 0;
+  padding-top: 1rem;
+}
+
+.header h1{
+  width: 24rem;
+  height: 1.8125rem;
   font-weight: 700;
   font-size: 1.5rem;
   text-align: center;
 }
 
-.image-section{
-  margin: 0;
-  width: 100%;
+
+.banner{
+  width: 23rem;
+  height: 24.75rem;
+  border-radius: .625rem;
+  padding: 0;
+  margin-top: 1.875rem;
+  margin-bottom: .625rem;
+  background-position: center; /* CENTRALIZA a imagem */
 }
 
-#cidade{
-    width: 100%;
+.banner-title{
+  padding-top: 13.125rem;
 }
 
-.teste2{
-  width: 95%;
+.banner-title h2{
+  font-size: 1.5rem;
+}
+
+
+.po{
+  width:  23rem !important;
   height: 2.5rem;
-  border-radius: 0.6rem;
+  border-radius: .625rem;
   justify-content: space-between;
-  padding-top: 0.5rem;
-  padding-right: 1rem;
-  padding-bottom: 0.5rem;
-  padding-left: 1rem;
-  margin-left: 0.62rem;
-
-}
-
-.teste2 h1{
-  font-weight: 700;
-  font-size: 1.25rem;
-  width: 13.12rem;
-  padding: 0;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
   margin: 0;
 }
 
-.teste2 a{
-
-  font-weight: 500;
-  font-size: 0.87rem;
-  text-decoration: underline;
-  text-decoration-style: solid;
-  padding: 0;
-  margin: 0;
-}
-
-.recen-imagens {
-  display: grid ;
-  grid-template-columns: 1fr ;
-  gap: 1rem; 
-  padding: 0;
-  box-sizing: border-box;
-  aspect-ratio: 3 / 4;
-
-}
-
-
-.recen-imagens div {
-  width: 100%;
-
-}
-
-
-.recen-imagens img {
-  width: 100% ;
-  height: auto;
-}
-
-.posts-recentes .container > div,
-.categorias,
-.recentes-titulo {
-    width: 100%;
-}
-
-.posts-recentes img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-  .categorias nav ul {
-    flex-direction: column;
-    gap: 0.5rem;
-}
-
-.coluna-direita {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-
-
-.coluna-direita > * {
-    width: 100%;       
-    box-sizing: border-box;
-}
-
-.teste3 h1{
-  padding: 1rem;
-  border-radius: 0.6rem;
-  margin-left: .6rem;
-  margin-top: 4.06rem;
-  width: 86%;
-  margin-top: 0;
-  text-align: center;
+.recen-imagens{
+  display: flex;
+  flex-direction: column;
+  width: 23rem;
+  height: 103.5rem;
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
   margin-bottom: 0;
-
+  margin-top: 1.875rem;
 }
 
-.populares ul li img{
-  width: 100%;
-  display: block;
-}
-
-.posts-populares{
+.populares{
+  width: 23rem;
+  height: 24.75rem;
   margin-top: 1.25rem;
 }
 
-.categorias  ul{
-  padding: 0;
+.teste3{
+  width: 22.875rem;
+  height: 3rem;
+  border-radius: .625rem;
+}
+
+.populares h1{
+  margin:0;
+  text-align: center;
+}
+
+.categorias{
+  width: 23rem;
+  height: 11.5rem;
+  margin: 0;
+  margin-top: 1.875rem;
+  margin-bottom: 2.5rem;
+}
+
+.categorias h1{
+  text-align: center;
 }
 
 .footer{
-    padding-top: 1.06rem;
-    padding-bottom: 1.06rem;
+  width: 100%;
+  height: 3rem;
+  justify-content: space-between;
+  margin-top: 0;
 }
 
 
 }
-
- 
-

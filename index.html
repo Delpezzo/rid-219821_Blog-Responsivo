@@ -10,44 +10,72 @@
     <title>Blog Responsivo</title>
 </head>
 <body>
-    <main>
+<main>
         <!--Header-->
-            <header class="container header">
+            <header class="header">
                 <div>
                     <h1>The Dev News</h1>
                 </div>
             </header>
 
+       <section class="container">
         <!-- COLUNA ESQUERDA -->
-       <section class="container colunas">
-       <div class="coluna-esquerda">
+    <div class="coluna-esquerda">
 
-       <!-- Seção imagem -->
-    <section class="image-section">
-     <picture>
-        <source srcset="./imagens/cidade2.svg" media="(max-width: 768px)">
-        <img id="cidade" src="./imagens/cidade.svg" alt="Cidade">
-      </picture>
-    </section>
+        <!-- BANNER -->
+         <section class="banner">
+            <div class="banner-title">
+            <h3>opinião</h3>
+            <h2>Como é ser um desenvolvedor</h2>
+            <h5><strong>By </strong>Fabio Tetsuo</h5>
+            </div>
+         </section>
 
-    <!-- Seção Posts Mais recentes -->
-    <section class="po">
-      <div class="teste2">
-      <h1>Posts mais recentes</h1>
-      <a href="">Ver todos</a>
-      </div>
-    </section>
+        <!-- Seção Posts Mais recentes -->
+        <section class="po">
+         <div class="teste2">
+          <h1>Posts mais recentes</h1>
+           <a href="">Ver todos</a>
+         </div>
+        </section>
 
-    <!-- Imagens recentes -->
     <section class="recen-imagens">
-      <div ><img src="./imagens/recentes1.svg" alt=""></div>
-      <div><img src="./imagens/recentes2.svg" alt=""></div>
-      <div><img src="./imagens/recentes3.svg" alt=""></div>
-      <div><img src="./imagens/recentes4.svg" alt=""></div>
-    </section>
-  </div>
+      <div class="cards">
+        <img src="./imagens/recentes1.svg" alt="">
+        <h3>desenvolvimento</h3>
+        <h2>Desenvolvimento mobile</h2>
+        <h4><span class="negrito">By</span> Fabio Tetsuo</h4>
+        <p>Lorem ipsum dolor sit amet consectetur. In vitae urna commodo amet congue integer dapibus. Interdum semper mauris convallis fusce enim odio. Vitae montes ridiculus felis.</p>
+        <h5>22 Agosto 2022</h5>
+      </div>
+      <div class="cards">
+        <img src="./imagens/recentes2.svg" alt="">
+        <h3>saude</h3>
+        <h2>Balancear vida profissional e pessoal</h2>
+        <h4><span class="negrito">By</span> Ridho Satriawan</h4>
+        <p>Lorem ipsum dolor sit amet consectetur. Et consectetur at consectetur sed nisl tempor.</p>
+        <h5>22 Agosto 2022</h5>
+      </div>
+      <div class="cards">
+        <img src="./imagens/recentes3.svg" alt="">
+        <h3>desenvolvimento</h3>
+        <h2>Configurando VSCode</h2>
+        <h4><span class="negrito">By</span> Fabio Tetsuo</h4>
+        <p>Lorem ipsum dolor sit amet consectetur. Erat interdum tortor ac sagittis id a etiam. Tellus vitae arcu dignissim massa aliquam vel tellus. Ipsum massa arcu nulla sed purus in ac.</p>
+        <h5>22 Agosto 2022</h5>
+      </div>
+      <div class="cards">
+        <img src="./imagens/recentes4.svg" alt="">
+        <h3>produtividade</h3>
+        <h2>2 monitores ou 1 ultrawide?</h2>
+        <h4><span class="negrito">By</span> Fulano da Silva</h4>
+        <p>Lorem ipsum dolor sit amet consectetur. Arcu tellus adipiscing sagittis tristique. Eget molestie posuere enim pretium venenatis nunc ligula donec a. Velit senectus amet nulla.</p>
+        <h5>22 Agosto 2022</h5>
+        </div>
+       </section>
+    </div>
 
-  <!-- COLUNA DIREITA -->
+    <!-- COLUNA DIREITA -->
   <div class="coluna-direita">
 
     <!-- Posts Populares -->
@@ -56,9 +84,27 @@
       <h1>Posts Populares</h1>
       </div>
       <ul>
-        <li class="posts-populares"><img src="./imagens/post1.svg" alt=""></li>
-        <li class="posts-populares"><img src="./imagens/post2.svg" alt=""></li>
-        <li class="posts-populares"><img src="./imagens/post3.svg" alt=""></li>
+        <li class="posts-img">
+          <img src="./imagens/post1.svg" alt="">
+          <div>
+           <h2>Desevolvimento atual</h2>
+           <h5>22 Agosto 2022</h5>
+          </div>
+        </li>
+        <li class="posts-img">
+          <img src="./imagens/post2.svg" alt="">
+          <div>
+           <h2>GitLab vs GitHub</h2>
+           <h5>22 Agosto 2022</h5>
+          </div>
+        </li>
+        <li class="posts-img">
+          <img src="./imagens/post3.svg" alt="">
+          <div>
+           <h2>Café atrapalha?</h2>
+           <h5>22 Agosto 2022</h5>
+          </div>
+        </li>
       </ul>
     </aside>
 
@@ -80,14 +126,14 @@
   </div>
 </section>
 
-        <!--FOOTER-->
-        <footer class="container footer">
+<!--FOOTER-->
+        <footer class="footer">
             <div>
             <h1>Copyright@The Dev News</h1>
             </div>
         </footer>
-
-    </main>
+</main>
+    
     
 </body>
 </html>
